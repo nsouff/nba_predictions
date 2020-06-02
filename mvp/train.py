@@ -6,7 +6,7 @@ import pickle
 
 
 data = pd.read_csv('historical_data.csv')
-used_data = ['G', 'MP', 'PTS', 'TRB', 'AST', 'STL', 'BLK', 'FG%', '3P%', 'FT%']
+used_data = ['G', 'MP', 'PTS', 'TRB', 'AST', 'STL', 'BLK', 'FG%', '3P%', 'FT%', 'win_perc']
 predict = 'Share'
 X = np.array(data[used_data])
 Y = np.array(data[predict])
