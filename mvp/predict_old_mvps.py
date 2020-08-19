@@ -8,6 +8,7 @@ from matplotlib import style
 from operator import itemgetter
 
 # Predicts old MVPs
+# Launch with 'v' as a parameter to see the error of the model
 data = pd.read_csv('historical_data.csv')
 used_data = ['G', 'MP', 'PTS', 'TRB', 'AST', 'STL', 'BLK', 'FG%', 'FT%', 'win_perc']
 predict = 'Share'
